@@ -13,4 +13,17 @@ function slides(){
     setTimeout('slides', time);
 }
 
+
+// Mudar fundo
+let fundoPrincipal = document.querySelector('.box3');
+let cores = ['red', 'green', 'blue'];
+let corIndex = 0;
+
+function MudarFundo() {
+    fundoPrincipal.style.backgroundColor = cores[corIndex];
+    corIndex = (corIndex + 1) % cores.length; // Para garantir que o índice permaneça dentro dos limites do array
+    setTimeout(MudarFundo, time);
+}
+
+MudarFundo();
 slides();
