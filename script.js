@@ -1,5 +1,8 @@
+alert("Seja bem-vindo")
+
+
 // SlideShow
-let ssImagens = ['./img/img1.png', './img/img2.png', './img/img3.png', './img/img4.png'];
+let ssImagens = ['./img/b1.jpg', './img/b2.jpg', './img/b3.jpeg', './img/b4.png'];
 let index = 0;
 let time = 3000;
 
@@ -10,7 +13,7 @@ function slides(){
     if(index == ssImagens.length){
         index=0;
     }
-    setTimeout('slides', time);
+    setTimeout(slides, time);
 }
 
 
