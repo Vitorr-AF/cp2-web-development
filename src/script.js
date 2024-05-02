@@ -1,3 +1,7 @@
+
+
+
+
 alert("Seja bem-vindo")
 
 
@@ -30,3 +34,7 @@ function MudarFundo() {
 
 MudarFundo();
 slides();
+
+
+
+
