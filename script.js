@@ -1,4 +1,23 @@
-alert("Seja bem-vindo")
+// Alert de bem vindo
+if (document.title === "Página principal") {
+    alert("Seja bem-vindo!");
+}
+
+
+
+// Tela de login
+function validar(){
+
+    //declarando as variaveis
+    let usuario = document.getElementById("usuario").value;
+    let senha = document.getElementById("senha").value;
+
+    if(usuario === "Ribamar" && senha === "curintia"){
+        window.open("./quiz.html")
+    }else{
+        alert("usuario ou senha inválidos")
+    }
+}
 
 
 // SlideShow
